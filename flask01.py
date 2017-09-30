@@ -22,7 +22,7 @@ app = Flask(__name__)
     
 @app.route("/<sl>/<sw>/<pl>/<pw>")
 def home(sl,sw,pl,pw):
-    
+    #la direccion acontinuacion se cambia por la direccion nueva del "ejemplo_modelo.mod"
     filename = "C:\Users\MARIO\Documents\python-iot\ejemplo_modelo.mod"
     modelo_svm = pickle.load(open(filename, 'rb'))
     
